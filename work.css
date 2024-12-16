@@ -1,0 +1,76 @@
+/* Button container to center the button */
+.explore-all-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+/* Style for the Explore All button */
+.explore-all-button {
+  background-color: #0075FF;
+  color: white;
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 400;
+  transition: background-color 0.3s ease;
+  border-radius: 30px;
+}
+
+.explore-all-button:hover {
+  background-color: #005bb5;
+}
+
+/* Card container with a smooth hover effect */
+/* Card container with smooth hover effect */
+/* Card container with smooth hover effect */
+/* Card container with smooth hover effect */
+
+
+/* Card container with smooth hover effect */
+/* Card container with smooth hover effect */
+/* Apply pulse effect only to the cards, not the section title */
+/* Apply pulse effect only to the cards, not the section title */
+.animate_top {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Pulse effect only when hovering the card */
+.animate_top:hover {
+  animation: pulse 1.2s infinite; /* Pulse effect on hover */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Optional shadow effect */
+}
+
+/* Define pulse animation */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1); /* Scale up slightly */
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Make sure the section title is unaffected by hover effects */
+.mi.ba,
+.mi.ba h4,
+.mi.ba p {
+  animation: none !important; /* No animation on section title */
+  transform: none !important; /* No scaling effect */
+  box-shadow: none !important; /* Ensure no box shadow */
+  transition: none !important; /* Disable transitions */
+}
+
+/* Optional: Add a subtle zoom effect on the image */
+.animate_top:hover .ob img {
+  transform: scale(1.05); /* Slight zoom on image */
+  transition: transform 0.3s ease;
+}
+
